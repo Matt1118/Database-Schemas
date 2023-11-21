@@ -1,0 +1,65 @@
+Address Schema
+
+{
+2
+  "$id": "https://example.com/address.schema.json",
+3
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+4
+  "description": "An address similar to http://microformats.org/wiki/h-card",
+5
+  "type": "object",
+6
+  "properties": {
+7
+    "postOfficeBox": {
+8
+      "type": "string"
+9
+    },
+10
+    "extendedAddress": {
+11
+      "type": "string"
+12
+    },
+13
+    "streetAddress": {
+14
+      "type": "string"
+15
+    },
+16
+    "locality": {
+17
+      "type": "string"
+18
+    },
+19
+    "region": {
+20
+      "type": "string"
+21
+    },
+22
+    "postalCode": {
+23
+      "type": "string"
+24
+    },
+25
+    "countryName": {
+26
+      "type": "string"
+27
+    }
+28
+  },
+29
+  "required": [ "locality", "region", "countryName" ],
+30
+  "dependentRequired": {
+31
+    "postOfficeBox": [ "streetAddress" ],
+32
+    "extendedAddress": [ "streetAddress" ]

@@ -1,0 +1,13 @@
+Device Type Data
+
+{
+2
+  "deviceType": "smartphone",
+3
+  "brand": "Samsung",
+4
+  "model": "Galaxy S21",
+5
+  "screenSize": 6.2
+6
+}

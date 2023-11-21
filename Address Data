@@ -1,0 +1,17 @@
+Address Data
+
+{
+2
+  "postOfficeBox": "123",
+3
+  "streetAddress": "456 Main St",
+4
+  "locality": "Cityville",
+5
+  "region": "State",
+6
+  "postalCode": "12345",
+7
+  "countryName": "Country"
+8
+}

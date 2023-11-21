@@ -1,0 +1,131 @@
+Device Type Schema
+
+{
+2
+  "$id": "https://example.com/device.schema.json",
+3
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+4
+  "type": "object",
+5
+  "properties": {
+6
+    "deviceType": {
+7
+      "type": "string"
+8
+    }
+9
+  },
+10
+  "required": ["deviceType"],
+11
+  "oneOf": [
+12
+    {
+13
+      "properties": {
+14
+        "deviceType": { "const": "smartphone" }
+15
+      },
+16
+      "$ref": "https://example.com/smartphone.schema.json"
+17
+    },
+18
+    {
+19
+      "properties": {
+20
+        "deviceType": { "const": "laptop" }
+21
+      },
+22
+      "$ref": "https://example.com/laptop.schema.json"
+23
+    }
+24
+  ]
+25
+}
+26
+
+
+27
+{
+28
+  "$id": "https://example.com/smartphone.schema.json",
+29
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+30
+  "type": "object",
+31
+  "properties": {
+32
+    "brand": {
+33
+      "type": "string"
+34
+    },
+35
+    "model": {
+36
+      "type": "string"
+37
+    },
+38
+    "screenSize": {
+39
+      "type": "number"
+40
+    }
+41
+  },
+42
+  "required": ["brand", "model", "screenSize"]
+43
+}
+44
+
+
+45
+{
+46
+  "$id": "https://example.com/laptop.schema.json",
+47
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+48
+  "type": "object",
+49
+  "properties": {
+50
+    "brand": {
+51
+      "type": "string"
+52
+    },
+53
+    "model": {
+54
+      "type": "string"
+55
+    },
+56
+    "processor": {
+57
+      "type": "string"
+58
+    },
+59
+    "ramSize": {
+60
+      "type": "number"
+61
+    }
+62
+  },
+63
+  "required": ["brand", "model", "processor", "ramSize"]
+64
+}

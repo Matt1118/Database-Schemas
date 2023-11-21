@@ -1,0 +1,95 @@
+Calendar Schema
+
+{
+2
+  "$id": "https://example.com/calendar.schema.json",
+3
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+4
+  "description": "A representation of an event",
+5
+  "type": "object",
+6
+  "required": [ "dtstart", "summary" ],
+7
+  "properties": {
+8
+    "startDate": {
+9
+      "type": "string",
+10
+      "description": "Event starting time"
+11
+    },
+12
+    "endDate": {
+13
+      "type": "string",
+14
+      "description": "Event ending time"
+15
+    },
+16
+    "summary": {
+17
+      "type": "string"
+18
+    },
+19
+    "location": {
+20
+      "type": "string"
+21
+    },
+22
+    "url": {
+23
+      "type": "string"
+24
+    },
+25
+    "duration": {
+26
+      "type": "string",
+27
+      "description": "Event duration"
+28
+    },
+29
+    "recurrenceDate": {
+30
+      "type": "string",
+31
+      "description": "Recurrence date"
+32
+    },
+33
+    "recurrenceDule": {
+34
+      "type": "string",
+35
+      "description": "Recurrence rule"
+36
+    },
+37
+    "category": {
+38
+      "type": "string"
+39
+    },
+40
+    "description": {
+41
+      "type": "string"
+42
+    },
+43
+    "geo": {
+44
+      "$ref": "https://example.com/geographical-location.schema.json"
+45
+    }
+46
+  }
+47
+}

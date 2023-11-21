@@ -1,0 +1,65 @@
+User Profile Schema
+
+{
+2
+  "$id": "https://example.com/user-profile.schema.json",
+3
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+4
+  "description": "A representation of a user profile",
+5
+  "type": "object",
+6
+  "required": ["username", "email"],
+7
+  "properties": {
+8
+    "username": {
+9
+      "type": "string"
+10
+    },
+11
+    "email": {
+12
+      "type": "string",
+13
+      "format": "email"
+14
+    },
+15
+    "fullName": {
+16
+      "type": "string"
+17
+    },
+18
+    "age": {
+19
+      "type": "integer",
+20
+      "minimum": 0
+21
+    },
+22
+    "location": {
+23
+      "type": "string"
+24
+    },
+25
+    "interests": {
+26
+      "type": "array",
+27
+      "items": {
+28
+        "type": "string"
+29
+      }
+30
+    }
+31
+  }
+32
+}

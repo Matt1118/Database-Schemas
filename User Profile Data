@@ -1,0 +1,17 @@
+User Profile Data
+
+{
+2
+  "username": "user123",
+3
+  "email": "user@example.com",
+4
+  "fullName": "John Doe",
+5
+  "age": 30,
+6
+  "location": "Cityville",
+7
+  "interests": ["Travel", "Technology"]
+8
+}

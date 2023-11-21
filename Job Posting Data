@@ -1,0 +1,19 @@
+Job Posting Data
+
+{
+2
+  "title": "Software Engineer",
+3
+  "company": "Tech Solutions Inc.",
+4
+  "location": "Cityville",
+5
+  "description": "Join our team as a software engineer...",
+6
+  "employmentType": "Full-time",
+7
+  "salary": 80000,
+8
+  "applicationDeadline": "2023-09-15"
+9
+}

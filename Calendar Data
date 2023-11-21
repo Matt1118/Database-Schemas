@@ -1,0 +1,15 @@
+Calendar Data
+
+{
+2
+  "startDate": "2023-08-25T10:00:00Z",
+3
+  "endDate": "2023-08-25T12:00:00Z",
+4
+  "summary": "Conference Presentation",
+5
+  "location": "Conference Center",
+6
+  "recurrenceDule": "FREQ=DAILY;COUNT=5"
+7
+}

@@ -1,0 +1,57 @@
+Blog Post
+
+{
+2
+  "$id": "https://example.com/blog-post.schema.json",
+3
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+4
+  "description": "A representation of a blog post",
+5
+  "type": "object",
+6
+  "required": ["title", "content", "author"],
+7
+  "properties": {
+8
+    "title": {
+9
+      "type": "string"
+10
+    },
+11
+    "content": {
+12
+      "type": "string"
+13
+    },
+14
+    "publishedDate": {
+15
+      "type": "string",
+16
+      "format": "date-time"
+17
+    },
+18
+    "author": {
+19
+      "$ref": "https://example.com/user-profile.schema.json"
+20
+    },
+21
+    "tags": {
+22
+      "type": "array",
+23
+      "items": {
+24
+        "type": "string"
+25
+      }
+26
+    }
+27
+  }
+28
+}

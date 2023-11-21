@@ -1,0 +1,25 @@
+Health Record Data
+
+{
+2
+  "patientName": "Jane Doe",
+3
+  "dateOfBirth": "1985-02-15",
+4
+  "bloodType": "A+",
+5
+  "allergies": ["Pollen", "Penicillin"],
+6
+  "conditions": ["Hypertension", "Diabetes"],
+7
+  "medications": ["Lisinopril", "Metformin"],
+8
+  "emergencyContact": {
+9
+    "username": "emergencyuser",
+10
+    "email": "emergency@example.com"
+11
+  }
+12
+}
